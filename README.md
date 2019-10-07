@@ -4,7 +4,7 @@
 目标：
 利用Nodejs搭建网站，使用Javascript进行开发
 
-准备工作：
+<strong>准备工作：</strong><br>
 个人安装ubuntu<br>
 安装nodejs以及npm<br>
 学习使用git进行版本控制<br>

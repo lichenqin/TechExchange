@@ -1,0 +1,25 @@
+TechExchange 练习日志
+
+----用于存贮练习过程中的问题与解决方法
+----标准格式为：
+----2019/10/12 by username
+
+----Q: 问题内容包括环境 语言 出现问题 若可提供复现代码更好
+
+----A：回答内容包括解决办法，代码等 无硬性要求
+
+----Extra: 其他一些内容 随便写
+
+
+----2019/10/12 by LT
+
+----Q:  Today while I am trying to accomplish the "Hello world Demo" of Node.js, there is one mistake. 
+        I run the server, and then I thought there are mistakes in the code so I use "control + Z" to stop it in the console.
+        After I finished my debugging, I run it again. And here is what the node said: "Error: listen EADDRINUSE: address already in use :::8888"
+        which means that at the very first time, when I run the program, the listen function bound the 8888 port, and "ctr Z" can not free the 8888 port.
+
+----A:  So, here are two solutions. One is that using "ctr C" instead of "ctr Z" to shut the server down (I don't know whether I express it in the right way).
+        The other is when you use "ctr Z", you should use comman "netstat -nap | grep node", which will show you all the port and the progress id of them.
+        Find the id like "13186/node..." which is in the same line of 8888. Type in "kill -9 13186", and everything will be fine as usual.
+
+----Extra：Leec：这里用英文是因为凌子屹的ubuntu没有中文，以后还是尽量用中文。
